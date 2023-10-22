@@ -49,6 +49,7 @@ class _BasketBallState extends State<BasketBall> {
                             minimumSize: Size(150, 50)),
                         onPressed: () {
                           team_A_points++;
+                          setState(() {});
                         },
                         child: Text(
                           'Add 1 Point',
@@ -62,6 +63,7 @@ class _BasketBallState extends State<BasketBall> {
                             minimumSize: Size(150, 50)),
                         onPressed: () {
                           team_A_points = team_A_points + 2;
+                          setState(() {});
                         },
                         child: Text(
                           'Add 2 Point',
@@ -75,6 +77,7 @@ class _BasketBallState extends State<BasketBall> {
                             minimumSize: Size(150, 50)),
                         onPressed: () {
                           team_A_points = team_A_points + 3;
+                          setState(() {});
                         },
                         child: Text(
                           'Add 3 Point',
@@ -112,7 +115,8 @@ class _BasketBallState extends State<BasketBall> {
                             primary: Colors.green,
                             minimumSize: Size(150, 50)),
                         onPressed: () {
-                          team_A_points++;
+                          team_B_points++;
+                          setState(() {});
                         },
                         child: Text(
                           'Add 1 Point',
@@ -125,7 +129,8 @@ class _BasketBallState extends State<BasketBall> {
                             primary: Colors.green,
                             minimumSize: Size(150, 50)),
                         onPressed: () {
-                          team_A_points = team_A_points + 2;
+                          team_B_points = team_B_points + 2;
+                          setState(() {});
                         },
                         child: Text(
                           'Add 2 Point',
@@ -138,7 +143,8 @@ class _BasketBallState extends State<BasketBall> {
                             primary: Colors.green,
                             minimumSize: Size(150, 50)),
                         onPressed: () {
-                          team_A_points = team_A_points + 3;
+                          team_B_points = team_B_points + 3;
+                          setState(() {});
                         },
                         child: Text(
                           'Add 3 Point',
@@ -155,7 +161,12 @@ class _BasketBallState extends State<BasketBall> {
                   padding: EdgeInsets.all(8),
                   primary: Colors.green,
                   minimumSize: Size(150, 50)),
-              onPressed: () {},
+              onPressed: () {
+                setState(() {
+                  team_A_points = 0;
+                  team_B_points = 0;
+                });
+              },
               child: Text(
                 'Reset',
                 style: TextStyle(fontSize: 19, color: Colors.black),
