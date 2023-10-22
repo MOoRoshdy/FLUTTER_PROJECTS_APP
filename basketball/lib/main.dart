@@ -4,8 +4,14 @@ void main() {
   runApp(BasketBall());
 }
 
-class BasketBall extends StatelessWidget {
+class BasketBall extends StatefulWidget {
+  @override
+  State<BasketBall> createState() => _BasketBallState();
+}
+
+class _BasketBallState extends State<BasketBall> {
   int team_A_points = 0;
+
   int team_B_points = 0;
 
   @override
@@ -15,7 +21,7 @@ class BasketBall extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.green,
-          title: Text('Pointer Counter'),
+          title: Text('Points Counter'),
         ),
         body: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -38,7 +44,9 @@ class BasketBall extends StatelessWidget {
                       ),
                       ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                            primary: Colors.green, minimumSize: Size(150, 50)),
+                            padding: EdgeInsets.all(8),
+                            primary: Colors.green,
+                            minimumSize: Size(150, 50)),
                         onPressed: () {
                           team_A_points++;
                         },
@@ -49,7 +57,9 @@ class BasketBall extends StatelessWidget {
                       ),
                       ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                            primary: Colors.green, minimumSize: Size(150, 50)),
+                            padding: EdgeInsets.all(8),
+                            primary: Colors.green,
+                            minimumSize: Size(150, 50)),
                         onPressed: () {
                           team_A_points = team_A_points + 2;
                         },
@@ -60,7 +70,9 @@ class BasketBall extends StatelessWidget {
                       ),
                       ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                            primary: Colors.green, minimumSize: Size(150, 50)),
+                            padding: EdgeInsets.all(8),
+                            primary: Colors.green,
+                            minimumSize: Size(150, 50)),
                         onPressed: () {
                           team_A_points = team_A_points + 3;
                         },
@@ -96,7 +108,9 @@ class BasketBall extends StatelessWidget {
                       ),
                       ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                            primary: Colors.green, minimumSize: Size(150, 50)),
+                            padding: EdgeInsets.all(8),
+                            primary: Colors.green,
+                            minimumSize: Size(150, 50)),
                         onPressed: () {
                           team_A_points++;
                         },
@@ -107,7 +121,9 @@ class BasketBall extends StatelessWidget {
                       ),
                       ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                            primary: Colors.green, minimumSize: Size(150, 50)),
+                            padding: EdgeInsets.all(8),
+                            primary: Colors.green,
+                            minimumSize: Size(150, 50)),
                         onPressed: () {
                           team_A_points = team_A_points + 2;
                         },
@@ -118,7 +134,9 @@ class BasketBall extends StatelessWidget {
                       ),
                       ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                            primary: Colors.green, minimumSize: Size(150, 50)),
+                            padding: EdgeInsets.all(8),
+                            primary: Colors.green,
+                            minimumSize: Size(150, 50)),
                         onPressed: () {
                           team_A_points = team_A_points + 3;
                         },
@@ -134,7 +152,9 @@ class BasketBall extends StatelessWidget {
             ),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
-                  primary: Colors.green, minimumSize: Size(150, 50)),
+                  padding: EdgeInsets.all(8),
+                  primary: Colors.green,
+                  minimumSize: Size(150, 50)),
               onPressed: () {},
               child: Text(
                 'Reset',
