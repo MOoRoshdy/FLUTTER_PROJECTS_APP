@@ -34,7 +34,7 @@ class _BasketBallState extends State<BasketBall> {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Text(
+                      const Text(
                         'Team A',
                         style: TextStyle(fontSize: 32),
                       ),
@@ -51,7 +51,7 @@ class _BasketBallState extends State<BasketBall> {
                           team_A_points++;
                           setState(() {});
                         },
-                        child: Text(
+                        child: const Text(
                           'Add 1 Point',
                           style: TextStyle(fontSize: 19, color: Colors.black),
                         ),
@@ -65,7 +65,7 @@ class _BasketBallState extends State<BasketBall> {
                           team_A_points = team_A_points + 2;
                           setState(() {});
                         },
-                        child: Text(
+                        child: const Text(
                           'Add 2 Point',
                           style: TextStyle(fontSize: 19, color: Colors.black),
                         ),
@@ -79,7 +79,7 @@ class _BasketBallState extends State<BasketBall> {
                           team_A_points = team_A_points + 3;
                           setState(() {});
                         },
-                        child: Text(
+                        child: const Text(
                           'Add 3 Point',
                           style: TextStyle(fontSize: 19, color: Colors.black),
                         ),
@@ -87,7 +87,7 @@ class _BasketBallState extends State<BasketBall> {
                     ],
                   ),
                 ),
-                Container(
+                const Container(
                   height: 500,
                   child: VerticalDivider(
                     endIndent: 20,
@@ -101,7 +101,7 @@ class _BasketBallState extends State<BasketBall> {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Text(
+                      const Text(
                         'Team B',
                         style: TextStyle(fontSize: 32),
                       ),
@@ -118,7 +118,7 @@ class _BasketBallState extends State<BasketBall> {
                           team_B_points++;
                           setState(() {});
                         },
-                        child: Text(
+                        child: const Text(
                           'Add 1 Point',
                           style: TextStyle(fontSize: 19, color: Colors.black),
                         ),
@@ -132,7 +132,7 @@ class _BasketBallState extends State<BasketBall> {
                           team_B_points = team_B_points + 2;
                           setState(() {});
                         },
-                        child: Text(
+                        child: const Text(
                           'Add 2 Point',
                           style: TextStyle(fontSize: 19, color: Colors.black),
                         ),
@@ -146,7 +146,7 @@ class _BasketBallState extends State<BasketBall> {
                           team_B_points = team_B_points + 3;
                           setState(() {});
                         },
-                        child: Text(
+                        child: const Text(
                           'Add 3 Point',
                           style: TextStyle(fontSize: 19, color: Colors.black),
                         ),
@@ -167,7 +167,7 @@ class _BasketBallState extends State<BasketBall> {
                   team_B_points = 0;
                 });
               },
-              child: Text(
+              child: const Text(
                 'Reset',
                 style: TextStyle(fontSize: 19, color: Colors.black),
               ),
