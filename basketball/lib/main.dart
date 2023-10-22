@@ -5,7 +5,8 @@ void main() {
 }
 
 class BasketBall extends StatelessWidget {
-  const BasketBall({super.key});
+  int team_A_points = 0;
+  int team_B_points = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +33,7 @@ class BasketBall extends StatelessWidget {
                         style: TextStyle(fontSize: 32),
                       ),
                       Text(
-                        '0',
+                        '$team_A_points',
                         style: TextStyle(fontSize: 155),
                       ),
                       ElevatedButton(
@@ -84,7 +85,7 @@ class BasketBall extends StatelessWidget {
                         style: TextStyle(fontSize: 32),
                       ),
                       Text(
-                        '0',
+                        '$team_B_points',
                         style: TextStyle(fontSize: 155),
                       ),
                       ElevatedButton(
@@ -124,7 +125,7 @@ class BasketBall extends StatelessWidget {
                   primary: Colors.green, minimumSize: Size(150, 50)),
               onPressed: () {},
               child: Text(
-                'Add 3 Point',
+                'Reset',
                 style: TextStyle(fontSize: 19, color: Colors.black),
               ),
             )
