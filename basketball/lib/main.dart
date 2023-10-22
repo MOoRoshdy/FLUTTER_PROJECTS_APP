@@ -13,8 +13,20 @@ class BasketBall extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.orange,
+          backgroundColor: Colors.green,
           title: Text('Pointer Counter'),
+        ),
+        body: Column(
+          children: [
+            Text(
+              'Team A',
+              style: TextStyle(fontSize: 32),
+            ),
+            Text(
+              '0',
+              style: TextStyle(fontSize: 155),
+            )
+          ],
         ),
       ),
     );
