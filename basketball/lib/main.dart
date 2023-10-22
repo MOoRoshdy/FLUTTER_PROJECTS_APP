@@ -39,7 +39,9 @@ class BasketBall extends StatelessWidget {
                       ElevatedButton(
                         style: ElevatedButton.styleFrom(
                             primary: Colors.green, minimumSize: Size(150, 50)),
-                        onPressed: () {},
+                        onPressed: () {
+                          team_A_points++;
+                        },
                         child: Text(
                           'Add 1 Point',
                           style: TextStyle(fontSize: 19, color: Colors.black),
@@ -48,7 +50,9 @@ class BasketBall extends StatelessWidget {
                       ElevatedButton(
                         style: ElevatedButton.styleFrom(
                             primary: Colors.green, minimumSize: Size(150, 50)),
-                        onPressed: () {},
+                        onPressed: () {
+                          team_A_points = team_A_points + 2;
+                        },
                         child: Text(
                           'Add 2 Point',
                           style: TextStyle(fontSize: 19, color: Colors.black),
@@ -57,7 +61,9 @@ class BasketBall extends StatelessWidget {
                       ElevatedButton(
                         style: ElevatedButton.styleFrom(
                             primary: Colors.green, minimumSize: Size(150, 50)),
-                        onPressed: () {},
+                        onPressed: () {
+                          team_A_points = team_A_points + 3;
+                        },
                         child: Text(
                           'Add 3 Point',
                           style: TextStyle(fontSize: 19, color: Colors.black),
@@ -91,7 +97,9 @@ class BasketBall extends StatelessWidget {
                       ElevatedButton(
                         style: ElevatedButton.styleFrom(
                             primary: Colors.green, minimumSize: Size(150, 50)),
-                        onPressed: () {},
+                        onPressed: () {
+                          team_A_points++;
+                        },
                         child: Text(
                           'Add 1 Point',
                           style: TextStyle(fontSize: 19, color: Colors.black),
@@ -100,7 +108,9 @@ class BasketBall extends StatelessWidget {
                       ElevatedButton(
                         style: ElevatedButton.styleFrom(
                             primary: Colors.green, minimumSize: Size(150, 50)),
-                        onPressed: () {},
+                        onPressed: () {
+                          team_A_points = team_A_points + 2;
+                        },
                         child: Text(
                           'Add 2 Point',
                           style: TextStyle(fontSize: 19, color: Colors.black),
@@ -109,7 +119,9 @@ class BasketBall extends StatelessWidget {
                       ElevatedButton(
                         style: ElevatedButton.styleFrom(
                             primary: Colors.green, minimumSize: Size(150, 50)),
-                        onPressed: () {},
+                        onPressed: () {
+                          team_A_points = team_A_points + 3;
+                        },
                         child: Text(
                           'Add 3 Point',
                           style: TextStyle(fontSize: 19, color: Colors.black),
