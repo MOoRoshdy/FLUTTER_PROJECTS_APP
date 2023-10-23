@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:language_learn_app/components/category_items.dart';
+import 'package:language_learn_app/screens/numbers_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -15,7 +16,10 @@ class HomePage extends StatelessWidget {
         children: [
           category(
             OnTap: () {
-              
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (BuildContext) {
+                return NumbersPage();
+              }));
             },
             text: 'Numbers',
             color: Colors.amber,
@@ -37,4 +41,3 @@ class HomePage extends StatelessWidget {
     );
   }
 }
-
