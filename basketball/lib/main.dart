@@ -87,7 +87,7 @@ class _BasketBallState extends State<BasketBall> {
                     ],
                   ),
                 ),
-                const Container(
+                Container(
                   height: 500,
                   child: VerticalDivider(
                     endIndent: 20,
