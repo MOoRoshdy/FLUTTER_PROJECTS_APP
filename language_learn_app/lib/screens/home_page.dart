@@ -64,7 +64,7 @@ class HomePage extends StatelessWidget {
 class category extends StatelessWidget {
   const category(this.text,this.color);
   String text;
-  string color;
+  String color;
 
   @override
   Widget build(BuildContext context) {
