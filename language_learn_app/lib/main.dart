@@ -4,7 +4,7 @@ import 'package:language_learn_app/screens/home_page.dart';
 
 void main() {
   runApp(TokuApp());
-}
+} 
 
 class TokuApp extends StatelessWidget {
   const TokuApp({super.key});

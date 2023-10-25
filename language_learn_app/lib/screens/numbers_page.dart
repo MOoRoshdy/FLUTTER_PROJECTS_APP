@@ -6,8 +6,19 @@ class NumbersPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
-        
+        appBar: AppBar(
+          title: Text('Numbers'),
+          backgroundColor: Colors.amber,
+        ),
+        body: Container(
+          child: Row(
+            children: [
+              
+            ],
+          ),
+        ),
       ),
     );
   }
