@@ -4,10 +4,48 @@ import 'package:language_learn_app/models/number.dart';
 
 class NumbersPage extends StatelessWidget {
   const NumbersPage({super.key});
-  final Number one = const Number(
-      image: 'assets/images/numbers/number_one.png',
-      jpName: 'ichi',
-      enName: 'one');
+  final List<Number> numbers = const [
+    Number(
+        image: 'assets/images/numbers/number_one.png',
+        jpName: 'ichi',
+        enName: 'one'),
+    Number(
+        image: 'assets/images/numbers/number_two.png',
+        jpName: 'ni',
+        enName: 'two'),
+    Number(
+        image: 'assets/images/numbers/number_three.png',
+        jpName: 'san',
+        enName: 'three'),
+    Number(
+        image: 'assets/images/numbers/number_four.png',
+        jpName: 'shi',
+        enName: 'four'),
+    Number(
+        image: 'assets/images/numbers/number_five.png',
+        jpName: 'go',
+        enName: 'five'),
+    Number(
+        image: 'assets/images/numbers/number_six.png',
+        jpName: 'roku',
+        enName: 'six'),
+    Number(
+        image: 'assets/images/numbers/number_seven.png',
+        jpName: 'shichi',
+        enName: 'seven'),
+    Number(
+        image: 'assets/images/numbers/number_eight.png',
+        jpName: 'hachi',
+        enName: 'eight'),
+    Number(
+        image: 'assets/images/numbers/number_nine.png',
+        jpName: 'kyuu',
+        enName: 'nine'),
+    Number(
+        image: 'assets/images/numbers/number_ten.png',
+        jpName: 'juu',
+        enName: 'ten'),
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -18,25 +56,18 @@ class NumbersPage extends StatelessWidget {
           title: Text('Numbers'),
           backgroundColor: Colors.amber,
         ),
-        body: ListView(
-          children: [
-            Item(number: one),
-            Item(number: one),
-            Item(number: one),
-            Item(number: one),
-            Item(number: one),
-            Item(number: one),
-            Item(number: one),
-            Item(number: one),
-            Item(number: one),
-            Item(number: one),
-            Item(number: one),
-            Item(number: one),
-            Item(number: one),
-            Item(number: one),
-            Item(number: one),
-          ],
-        ),
+        body: ListView(children: [
+          Item(number: numbers[0]),
+          Item(number: numbers[1]),
+          Item(number: numbers[2]),
+          Item(number: numbers[3]),
+          Item(number: numbers[4]),
+          Item(number: numbers[5]),
+          Item(number: numbers[6]),
+          Item(number: numbers[7]),
+          Item(number: numbers[8]),
+          Item(number: numbers[9]),
+        ]),
       ),
     );
   }
