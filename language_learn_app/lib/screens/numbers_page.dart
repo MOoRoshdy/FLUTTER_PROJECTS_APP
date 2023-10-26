@@ -18,7 +18,25 @@ class NumbersPage extends StatelessWidget {
           title: Text('Numbers'),
           backgroundColor: Colors.amber,
         ),
-        body: Item(number: one),
+        body: ListView(
+          children: [
+            Item(number: one),
+            Item(number: one),
+            Item(number: one),
+            Item(number: one),
+            Item(number: one),
+            Item(number: one),
+            Item(number: one),
+            Item(number: one),
+            Item(number: one),
+            Item(number: one),
+            Item(number: one),
+            Item(number: one),
+            Item(number: one),
+            Item(number: one),
+            Item(number: one),
+          ],
+        ),
       ),
     );
   }
