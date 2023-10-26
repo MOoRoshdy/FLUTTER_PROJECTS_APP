@@ -31,10 +31,16 @@ class NumbersPage extends StatelessWidget {
                   ),
                 ],
               ),
-              Icon(
-                Icons.play_arrow,
-                color: Colors.white,
-                size: 32,
+              Spacer(
+                flex: 1,
+              ),
+              Padding(
+                padding: const EdgeInsets.only(right: 16),
+                child: Icon(
+                  Icons.play_arrow,
+                  color: Colors.white,
+                  size: 30,
+                ),
               )
             ],
           ),
