@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:language_learn_app/models/number.dart';
 
 class Item extends StatelessWidget {
-  const Item({Key? key,required this.number}):super(key:key);
+  const Item({Key? key, required this.number}) : super(key: key);
   final Number number;
 
   @override
@@ -33,13 +33,15 @@ class Item extends StatelessWidget {
             flex: 1,
           ),
           Padding(
-            padding: const EdgeInsets.only(right: 16),
-            child: Icon(
-              Icons.play_arrow,
-              color: Colors.white,
-              size: 30,
-            ),
-          )
+              padding: const EdgeInsets.only(right: 16),
+              child: IconButton(
+                onPressed: () {},
+                icon: Icon(
+                  Icons.play_arrow,
+                  color: Colors.white,
+                  size: 28,
+                ),
+              ))
         ],
       ),
     );
