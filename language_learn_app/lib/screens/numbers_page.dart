@@ -17,19 +17,24 @@ class NumbersPage extends StatelessWidget {
           height: 100,
           child: Row(
             children: [
-              Image.asset('assets/images/numbers/number_one.png'),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(
-                    'ichi',
-                    style: TextStyle(color: Colors.white, fontSize: 20),
-                  ),
-                  Text(
-                    'one',
-                    style: TextStyle(color: Colors.white, fontSize: 20),
-                  ),
-                ],
+              Container(
+                  color: Color(0xffFFF6DC),
+                  child: Image.asset('assets/images/numbers/number_one.png')),
+              Padding(
+                padding: const EdgeInsets.only(left: 16),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      'ichi',
+                      style: TextStyle(color: Colors.white, fontSize: 20),
+                    ),
+                    Text(
+                      'one',
+                      style: TextStyle(color: Colors.white, fontSize: 20),
+                    ),
+                  ],
+                ),
               ),
               Spacer(
                 flex: 1,
