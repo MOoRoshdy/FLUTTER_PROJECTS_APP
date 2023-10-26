@@ -1,3 +1,5 @@
+import 'dart:js_util';
+
 import 'package:flutter/material.dart';
 import 'package:language_learn_app/components/item.dart';
 import 'package:language_learn_app/models/number.dart';
@@ -52,23 +54,21 @@ class NumbersPage extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(
-          title: Text('Numbers'),
-          backgroundColor: Colors.amber,
-        ),
-        body: ListView(children: [
-          Item(number: numbers[0]),
-          Item(number: numbers[1]),
-          Item(number: numbers[2]),
-          Item(number: numbers[3]),
-          Item(number: numbers[4]),
-          Item(number: numbers[5]),
-          Item(number: numbers[6]),
-          Item(number: numbers[7]),
-          Item(number: numbers[8]),
-          Item(number: numbers[9]),
-        ]),
-      ),
+          appBar: AppBar(
+            title: Text('Numbers'),
+            backgroundColor: Colors.amber,
+          ),
+          body: ListView(
+            children: getList(numbers),
+          )),
     );
+  }
+
+  List<Widget> getList(List<Number> numbers) {
+    List<Widget> itemsList = [];
+    for (int i = 0; i < numbers.length; i++) {
+      itemsList.add(Item(number: numbers[i]));
+    }
+    return itemsList;
   }
 }
