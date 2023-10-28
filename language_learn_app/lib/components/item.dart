@@ -32,13 +32,14 @@ class Item extends StatelessWidget {
           Spacer(
             flex: 1,
           ),
-          Padding(
-              padding: const EdgeInsets.only(right: 16),
-              child: Icon(
-                Icons.play_arrow,
-                color: Colors.white,
-                size: 30,
-              )),
+          IconButton(
+            onPressed: () {},
+            icon: Icon(
+              Icons.play_arrow,
+              color: Colors.white,
+              size: 28,
+            ),
+          ),
         ],
       ),
     );
