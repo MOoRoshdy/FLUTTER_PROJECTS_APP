@@ -1,4 +1,4 @@
-import 'dart:js_util';
+// import 'dart:js_util';
 
 import 'package:flutter/material.dart';
 import 'package:language_learn_app/components/item.dart';
@@ -52,26 +52,22 @@ class NumbersPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-          appBar: AppBar(
-            title: Text('Numbers'),
-            backgroundColor: Colors.amber,
-          ),
-          body: ListView.builder(
-            itemCount: numbers.length,
-            itemBuilder: (context, indx) {
-              Item(number: numbers[indx]);
-            },
-          )),
-    );
+        debugShowCheckedModeBanner: false,
+        home: Scaffold(
+            appBar: AppBar(
+              title: Text('Numbers'),
+              backgroundColor: Colors.amber,
+            ),
+            body: ListView(
+              children: getList(numbers),
+            )));
   }
 
-  // List<Widget> getList(List<Number> numbers) {
-  //   List<Widget> itemsList = [];
-  //   for (int i = 0; i < numbers.length; i++) {
-  //     itemsList.add(Item(number: numbers[i]));
-  //   }
-  //   return itemsList;
-  // }
+  List<Widget> getList(List<Number> numbers) {
+    List<Widget> itemsList = [];
+    for (int i = 0; i < numbers.length; i++) {
+      itemsList.add(Item(number: numbers[i]));
+    }
+    return itemsList;
+  }
 }

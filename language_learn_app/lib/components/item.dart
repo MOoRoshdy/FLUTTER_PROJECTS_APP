@@ -34,14 +34,11 @@ class Item extends StatelessWidget {
           ),
           Padding(
               padding: const EdgeInsets.only(right: 16),
-              child: IconButton(
-                onPressed: () {},
-                icon: Icon(
-                  Icons.play_arrow,
-                  color: Colors.white,
-                  size: 28,
-                ),
-              ))
+              child: Icon(
+                Icons.play_arrow,
+                color: Colors.white,
+                size: 30,
+              )),
         ],
       ),
     );
