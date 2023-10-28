@@ -54,20 +54,25 @@ class NumbersPage extends StatelessWidget {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         home: Scaffold(
-            appBar: AppBar(
-              title: Text('Numbers'),
-              backgroundColor: Colors.amber,
-            ),
-            body: ListView(
-              children: getList(numbers),
-            )));
+          appBar: AppBar(
+            title: Text('Numbers'),
+            backgroundColor: Colors.amber,
+          ),
+          body: ListView.builder(
+            itemCount: numbers.length,
+            itemBuilder: (context, num) {
+              
+              return Item(number: numbers[num]);
+            },
+          ),
+        ));
   }
 
-  List<Widget> getList(List<Number> numbers) {
-    List<Widget> itemsList = [];
-    for (int i = 0; i < numbers.length; i++) {
-      itemsList.add(Item(number: numbers[i]));
-    }
-    return itemsList;
-  }
+  // List<Widget> getList(List<Number> numbers) {
+  //   List<Widget> itemsList = [];
+  //   for (int i = 0; i < numbers.length; i++) {
+  //     itemsList.add(Item(number: numbers[i]));
+  //   }
+  //   return itemsList;
+  // }
 }
