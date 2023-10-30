@@ -1,5 +1,7 @@
+// import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:language_learn_app/models/number.dart';
+import 'package:assets_audio_player/assets_audio_player.dart';
 
 class Item extends StatelessWidget {
   const Item({Key? key, required this.number}) : super(key: key);
@@ -33,7 +35,13 @@ class Item extends StatelessWidget {
             flex: 1,
           ),
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              AssetsAudioPlayer.newPlayer().open(
+                Audio(number.sound),
+                autoStart: true,
+                showNotification: true,
+              );
+            },
             icon: Icon(
               Icons.play_arrow,
               color: Colors.white,
