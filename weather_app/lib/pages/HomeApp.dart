@@ -24,8 +24,8 @@ class HomeApp extends StatelessWidget {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Text('Wather'),
-            Text('Wather'),
+            Text('Ther is no Wrather ......'),
+            Text('Search now.....................!'),
           ],
         ),
       ),
