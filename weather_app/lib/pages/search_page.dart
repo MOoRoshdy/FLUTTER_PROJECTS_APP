@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:weather_app/main.dart';
+import 'package:weather_app/services/weather_services.dart';
 
 class SearchPage extends StatelessWidget {
   String? City_Name;
@@ -13,6 +15,8 @@ class SearchPage extends StatelessWidget {
           child: TextField(
             onSubmitted: (data) {
               City_Name = data;
+              WeatherServices service = WeatherServices();
+              service.get_wheather(CityName: City_Name!);
             },
             decoration: InputDecoration(
                 label: Text('Search'),
