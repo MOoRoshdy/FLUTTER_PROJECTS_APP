@@ -17,6 +17,7 @@ class WeatherServices {
         temp: data['forecast']['forecastday'][0]['avgtemp_f'],
         maxTemp: data['forecast']['forecastday'][0]['maxtemp_c'],
         minTemp: data['forecast']['forecastday'][0]['mintemp_c'],
-        WeatherStateName: data['forecast']['forecastday'][0]['text']);
+        WeatherStateName: data['forecast']['forecastday'][0]['condition']
+            ['text']);
   }
 }
